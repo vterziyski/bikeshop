@@ -1,0 +1,191 @@
+html {
+    background-color: #f3efe8;
+    margin: 1rem;
+}
+
+h1 {
+    font-family: 'Signika Negative', sans-serif;
+    background-color: black;
+    width: 7rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: white;
+    padding: 4px 0px;
+}
+
+
+nav a {
+    text-decoration: none;
+}
+
+ul a {
+    margin-left: -2.5rem;
+    font-size: 0.719rem;
+    color: grey;
+    letter-spacing: 1.5px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+    font-size: 0.719rem;
+    margin-left: 2.5rem;
+}
+
+ul li a {
+    color: #774138;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+ul li a:hover {
+    color: #000000;
+}
+
+/*PRODUCT CARD*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10vw;
+    box-sizing: border-box;
+    gap: 4rem;
+}
+
+.bike {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: white;
+    padding: 15px;
+}
+
+.bike img {
+    width: 100%;
+    grid-column: 1/2;
+}
+
+.bike h2 {
+    font-family: 'Signika Negative', sans-serif;
+    color: rgb(95, 95, 95);
+    font-size: 0.9rem;
+}
+
+#model_name {
+    color: grey;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    line-height: 1px;
+    margin-top: -0.01px;
+}
+
+#model_name::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.699);
+    margin-top: 10px;
+}
+
+.info {
+    border: rgba(128, 128, 128, 0.336) 1px solid;
+}
+
+.price, .stock , .colours {
+    display: flex;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.336);
+    width: 90%;
+    margin: auto;
+}
+
+.info p, span {
+    margin-left: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-style: italic;
+    color: black;
+}
+
+
+.colours {
+    font-style: normal;
+}
+
+button {
+    border: none;
+    text-align: center;
+    background-color: white;
+    border: 1.5px solid #774138;
+    color: #774138;
+    padding: 10px;
+    font-weight: bold;
+    margin: 0.6rem;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.center_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h4 {
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: grey;
+}
+
+.info p {
+    font-weight: 600;
+}
+
+/* colours  */
+
+.colour1 span {
+    display: none;
+}
+
+.colours p {
+    display: flex;
+}
+
+.colours p {
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.colour1 {
+    background-color: black;
+    width: 1rem;
+    height: 1rem;
+}
+
+.colour2 {
+    background-color: beige;
+    width: 1rem;
+    height: 1rem;
+}
+
+.colour3 {
+    background-color: red;
+    width: 1rem;
+    height: 1rem;
+}
+
+.colour4 {
+    background-color: rgb(87, 87, 206);
+    width: 1rem;
+    height: 1rem;
+}
+
+.colour5 {
+    background-color: rgb(122, 168, 115);
+    width: 1rem;
+    height: 1rem;
+}
