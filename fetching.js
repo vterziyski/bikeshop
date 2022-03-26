@@ -25,32 +25,35 @@ function handleData(data) {
 }
 
 function showPosts(bike) {
-  /* console.log(bike); */
+  console.log(bike.colour4); 
 
   const template = document.querySelector("#template_bikes").content;
-
   const copy = template.cloneNode(true);
+
   copy.querySelector(".bike h2").textContent = bike.brand;
   copy.querySelector("#model_name").textContent = bike.model;
   copy.querySelector(".price p").textContent = bike.price;
   copy.querySelector(".stock p").textContent = bike.stock;
-  console.log(bike.colours);
-  let colorArray = bike.colours.split(" ");
+  copy.querySelector("#cl1").setAttribute("class", bike.colour1);
+  copy.querySelector("#cl2").setAttribute("class", bike.colour2);
+  copy.querySelector("#cl3").setAttribute("class", bike.colour3);
+  copy.querySelector("#cl4").setAttribute("class", bike.colour4);
+  copy.querySelector("#cl5").setAttribute("class", bike.colour5);
+  copy.querySelector(".na").textContent = bike.colours;
+ 
+  
+
+  /* let colorArray = bike.colours.split(" "); 
+
   colorArray.forEach((color) => {
     console.log(color);
     copy.querySelector(".colours p").classList.add(color);
-  });
-  //copy.querySelector(".colours p").setAttribute("class", bike.colours);
+    copy.querySelector(".colours p").setAttribute("class", bike.colours);
+  }); */
+
+  
   copy.querySelector(".bike img").src =
     bike._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
-
-  /* const span = document.querySelector(".colours p").textContent;
-
-  if (span === "") {
-
-  } */
-
-  document.querySelector(".colour1");
 
   const parent = document.querySelector("main");
   parent.appendChild(copy);
