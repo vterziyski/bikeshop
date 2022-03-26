@@ -102,14 +102,21 @@ main {
     margin: auto;
 }
 
-.info p, span {
-    margin-left: 3rem;
+.info p {
+    margin-left: 2.2rem;
     margin-top: auto;
     margin-bottom: auto;
     font-style: italic;
     color: black;
+    font-weight: 600;
+}
+.colors p {
+    margin-left: 0.2rem;
 }
 
+.stock p {
+    margin-left: 1rem;
+}
 
 .colours {
     font-style: normal;
@@ -142,9 +149,6 @@ button {
     color: grey;
 }
 
-.info p {
-    font-weight: 600;
-}
 
 /* colours  */
 
